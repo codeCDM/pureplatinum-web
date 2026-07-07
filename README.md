@@ -34,9 +34,9 @@ git push origin main
 4. Build settings are already defined in `vercel.json`:
    - Install command: `npm ci`
    - Build command: `npm run build`
-   - Node version: `22.x`
-5. Add any required environment variables in Vercel Project Settings -> Environment Variables.
-6. Deploy.
+5. Set Node.js version in Vercel Project Settings to `22.x` (recommended).
+6. Add any required environment variables in Vercel Project Settings -> Environment Variables.
+7. Deploy.
 
 ## CI
 GitHub Actions workflow is in `.github/workflows/build.yml`.
