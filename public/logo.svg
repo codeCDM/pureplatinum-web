@@ -1,0 +1,40 @@
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define gradients -->
+  <defs>
+    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#20aeea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8bdaf2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sparkle icon (left side) -->
+  <g>
+    <!-- Central star -->
+    <circle cx="35" cy="35" r="12" fill="url(#sparkleGrad)"/>
+    
+    <!-- Star points -->
+    <path d="M 35 12 L 38 25 L 50 28 L 40 35 L 43 48 L 35 42 L 27 48 L 30 35 L 20 28 L 32 25 Z" fill="#20aeea" opacity="0.8"/>
+    
+    <!-- Sparkle dots -->
+    <circle cx="55" cy="20" r="3" fill="#8bdaf2"/>
+    <circle cx="58" cy="50" r="2.5" fill="#8bdaf2"/>
+    <circle cx="15" cy="45" r="2.5" fill="#8bdaf2"/>
+    <circle cx="18" cy="18" r="2" fill="#20aeea" opacity="0.6"/>
+  </g>
+  
+  <!-- Text -->
+  <g>
+    <!-- Main company name -->
+    <text x="75" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#122034" letter-spacing="0.5">
+      Pure Platinum
+    </text>
+    
+    <!-- Tagline -->
+    <text x="75" y="58" font-family="Arial, sans-serif" font-size="12" fill="#8bdaf2" letter-spacing="1">
+      CLEANING
+    </text>
+  </g>
+  
+  <!-- Accent line -->
+  <line x1="75" y1="62" x2="280" y2="62" stroke="#20aeea" stroke-width="2" opacity="0.6"/>
+</svg>

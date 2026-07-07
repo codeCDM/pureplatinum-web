@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { color: #1d2633; background: #fff; }
+.container-page { @apply max-w-7xl mx-auto px-5 sm:px-8; }
+.btn-primary { @apply inline-flex items-center justify-center rounded-full bg-platinum px-7 py-3 font-semibold text-white shadow-soft hover:bg-sky-500 transition; }
+.btn-outline { @apply inline-flex items-center justify-center rounded-full border border-white/50 px-7 py-3 font-semibold text-white hover:bg-white hover:text-navy transition; }
+.section-kicker { @apply text-sm uppercase tracking-[.25em] font-bold text-platinum; }
+.nav-link { @apply text-sm font-semibold text-slate-700 hover:text-platinum transition; }
+.card { @apply rounded-3xl bg-white p-7 shadow-soft border border-slate-100; }
