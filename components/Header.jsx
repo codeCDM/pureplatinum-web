@@ -21,7 +21,7 @@ export default function Header() {
           <img
             src="/logo.svg"
             alt="Pure Platinum Cleaning"
-            className="h-12 w-auto object-contain"
+            className="h-[78px] w-auto object-contain"
           />
         </a>
         <nav className="hidden lg:flex gap-6 items-center">

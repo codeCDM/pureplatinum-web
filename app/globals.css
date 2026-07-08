@@ -2,11 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; }
-body { color: #1d2633; background: #fff; }
-.container-page { @apply max-w-7xl mx-auto px-5 sm:px-8; }
-.btn-primary { @apply inline-flex items-center justify-center rounded-full bg-platinum px-7 py-3 font-semibold text-white shadow-soft hover:bg-sky-500 transition; }
-.btn-outline { @apply inline-flex items-center justify-center rounded-full border border-white/50 px-7 py-3 font-semibold text-white hover:bg-white hover:text-navy transition; }
-.section-kicker { @apply text-sm uppercase tracking-[.25em] font-bold text-platinum; }
-.nav-link { @apply text-sm font-semibold text-slate-700 hover:text-platinum transition; }
-.card { @apply rounded-3xl bg-white p-7 shadow-soft border border-slate-100; }
+:root {
+	--bg-soft: #f3f8fd;
+	--surface: #ffffff;
+	--ink-strong: #0f1d30;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--ink-strong);
+	background:
+		radial-gradient(circle at 0% 0%, rgba(139, 218, 242, 0.2), transparent 40%),
+		radial-gradient(circle at 100% 100%, rgba(32, 174, 234, 0.12), transparent 45%),
+		var(--bg-soft);
+}
+
+.container-page {
+	@apply max-w-7xl mx-auto px-5 sm:px-8;
+}
+
+.btn-primary {
+	@apply inline-flex items-center justify-center rounded-full bg-platinum px-7 py-3 font-semibold text-white shadow-soft transition duration-300 hover:-translate-y-0.5 hover:bg-sky-500 hover:shadow-[0_26px_72px_rgba(18,32,52,.2)];
+}
+
+.btn-outline {
+	@apply inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-7 py-3 font-semibold text-white backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-navy;
+}
+
+.section-kicker {
+	@apply text-xs sm:text-sm uppercase tracking-[.28em] font-bold text-platinum;
+}
+
+.nav-link {
+	@apply text-sm font-semibold text-slate-700 transition hover:text-platinum;
+}
+
+.card {
+	@apply rounded-3xl border border-white/70 bg-white/80 p-7 shadow-soft backdrop-blur;
+}
+
+.section-shell {
+	@apply rounded-[2rem] border border-slate-100 bg-[var(--surface)] shadow-soft;
+}

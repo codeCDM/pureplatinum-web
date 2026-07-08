@@ -1,40 +1,11 @@
-<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Define gradients -->
-  <defs>
-    <linearGradient id="sparkleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#20aeea;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8bdaf2;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  
-  <!-- Sparkle icon (left side) -->
-  <g>
-    <!-- Central star -->
-    <circle cx="35" cy="35" r="12" fill="url(#sparkleGrad)"/>
-    
-    <!-- Star points -->
-    <path d="M 35 12 L 38 25 L 50 28 L 40 35 L 43 48 L 35 42 L 27 48 L 30 35 L 20 28 L 32 25 Z" fill="#20aeea" opacity="0.8"/>
-    
-    <!-- Sparkle dots -->
-    <circle cx="55" cy="20" r="3" fill="#8bdaf2"/>
-    <circle cx="58" cy="50" r="2.5" fill="#8bdaf2"/>
-    <circle cx="15" cy="45" r="2.5" fill="#8bdaf2"/>
-    <circle cx="18" cy="18" r="2" fill="#20aeea" opacity="0.6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150" width="600" height="150">
+  <g transform="translate(20,10)">
+    <path d="M48,19 C55.36,50.28 62.72,57.64 94,65 C62.72,72.36 55.36,79.72 48,111 C40.64,79.72 33.28,72.36 2,65 C33.28,57.64 40.64,50.28 48,19 Z" fill="#171819"/>
+    <path d="M100,9 C102.4,19.2 104.8,21.6 115,24 C104.8,26.4 102.4,28.8 100,39 C97.6,28.8 95.2,26.4 85,24 C95.2,21.6 97.6,19.2 100,9 Z" fill="#8F97A3"/>
   </g>
-  
-  <!-- Text -->
-  <g>
-    <!-- Main company name -->
-    <text x="75" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#122034" letter-spacing="0.5">
-      Pure Platinum
-    </text>
-    
-    <!-- Tagline -->
-    <text x="75" y="58" font-family="Arial, sans-serif" font-size="12" fill="#8bdaf2" letter-spacing="1">
-      CLEANING
-    </text>
+  <g transform="translate(158,4)">
+    <text x="0" y="80" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" letter-spacing="-0.5" fill="#171819">Pure Platinum</text>
+    <line x1="2" y1="102" x2="420" y2="102" stroke="#C9CDD3" stroke-width="1.5"/>
+    <text x="2" y="130" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="7" fill="#8F97A3">CLEANING</text>
   </g>
-  
-  <!-- Accent line -->
-  <line x1="75" y1="62" x2="280" y2="62" stroke="#20aeea" stroke-width="2" opacity="0.6"/>
 </svg>
