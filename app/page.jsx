@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 
 const services = [
   [
@@ -215,10 +216,7 @@ export default function Home() {
           ))}
         </div>
       </Section>
-      <section
-        id="supplies"
-        className="py-16 sm:py-20"
-      >
+      <section id="supplies" className="py-16 sm:py-20">
         <div className="container-page rounded-[2rem] p-8 sm:p-10 lg:p-12 grid md:grid-cols-2 gap-8 bg-gradient-to-br from-platinum to-skysoft text-white shadow-soft">
           <div>
             <p className="uppercase tracking-[.25em] font-bold">Supplies</p>
@@ -264,28 +262,7 @@ export default function Home() {
               <b>clean@pureplatinumcleaning.com.au</b>.
             </p>
           </div>
-          <form className="card grid gap-4 bg-white">
-            <input
-              className="rounded-xl border border-slate-200 p-4 outline-none transition focus:border-platinum"
-              placeholder="First Name"
-            />
-            <input
-              className="rounded-xl border border-slate-200 p-4 outline-none transition focus:border-platinum"
-              placeholder="Last Name"
-            />
-            <input
-              className="rounded-xl border border-slate-200 p-4 outline-none transition focus:border-platinum"
-              placeholder="Email"
-            />
-            <textarea
-              className="rounded-xl border border-slate-200 p-4 outline-none transition focus:border-platinum"
-              rows="5"
-              placeholder="How can we help?"
-            />
-            <button className="btn-primary" type="button">
-              Submit Enquiry
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
       <Footer />

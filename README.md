@@ -9,6 +9,20 @@ npm install
 npm run dev
 ```
 
+## Contact form email configuration
+
+Set these environment variables locally in `.env.local` and in Vercel project settings:
+
+```bash
+SMTP_HOST=smtp.your-provider.com
+SMTP_PORT=587
+SMTP_USER=your-smtp-username
+SMTP_PASS=your-smtp-password
+SMTP_FROM=noreply@pureplatinumcleaning.com.au
+```
+
+Contact form submissions are sent to `peter@pureplatinumcleaning.com.au`.
+
 ## Quality checks
 
 ```bash
